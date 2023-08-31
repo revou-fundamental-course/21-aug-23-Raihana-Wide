@@ -1,0 +1,177 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;    
+    transition: .2s linear;
+  }
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+  }
+
+  section{
+    padding: 2rem 9%;
+
+
+  }
+  header{
+    position: fixed;
+    top: 0; left: 0; right:0;
+    background: whitesmoke;
+    padding: 1rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  header .logo{
+    margin-right: auto;  
+  }
+  header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    color:#666;
+  }
+  header .navbar a:hover{
+    color:var(yellow);
+  }
+
+.home{
+  display: flex;
+  align-items: center;
+  min-height: 50vh;
+  background: https://png.pngtree.com/background/20210709/original/pngtree-aesthetic-technology-abstract-city-architecture-banner-background-material-picture-image_940398.jpg;
+  background-size:cover;
+  background-position: center;
+}
+
+.home .content{
+  max-width: 60rem;
+}
+
+.home .content h1{
+  font-size: 2.5rem;
+  height: 4rem;
+}
+
+.home .content p{
+  font-size: 1rem;
+}
+
+.icons-container{
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+  background: #fff;
+  border: .1rem solid rgba(0,0,0,.1);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.icons-container .icons img{
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.contact{
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.contact h3{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.contact form{
+  margin-top: 30px;
+}
+
+.form .input-box{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label{
+  color:#333;
+}
+
+.form .input-box {
+  position: relative;
+  height: 50px;
+  width:100%;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding:0 15px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  /*media queries */
+  @media (max-width:991px) {
+    html {
+      font-size: 55%;  
+    }
+    header{
+      padding: 2rem;      
+    }
+  }
+  @media (max-width:768px) {
+    header .navbar{
+      position: absolute;
+      top:100%; left: 0; right: 0;
+      background:#eee;
+      border-top: .1rem solid rgba(0,0,0,.1);
+      clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header .navbar a{
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      color:#fff;
+      border: 1rem solid rgba(0,0,0,.1);
+      display: block;
+    }
+    @media (max-width:450px) {
+      html {
+        font-size: 50%;  
+      }
+  }
+
